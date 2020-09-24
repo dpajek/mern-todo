@@ -19,7 +19,7 @@ export default class CreateTodo extends React.Component {
 
   onChangeTodoDescription(e) {
     this.setState({
-      todo_description: e.target.value,
+      todo_description: e.target.value, // e=event target=element that triggered event
     });
   }
 
@@ -60,7 +60,7 @@ export default class CreateTodo extends React.Component {
             <label>Description: </label>
             <input
               type="text"
-              className="formControl"
+              className="form-control"
               value={this.state.todo_description}
               onChange={this.onChangeTodoDescription}
             />
@@ -69,7 +69,7 @@ export default class CreateTodo extends React.Component {
             <label>Responsible: </label>
             <input
               type="text"
-              className="formControl"
+              className="form-control"
               value={this.state.todo_responsible}
               onChange={this.onChangeTodoResponsible}
             />
@@ -78,7 +78,7 @@ export default class CreateTodo extends React.Component {
             <label>Priority: </label>
             <input
               type="text"
-              className="formControl"
+              className="form-control"
               value={this.state.todo_priority}
               onChange={this.onChangeTodoPriority}
             />

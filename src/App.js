@@ -15,7 +15,7 @@ class App extends React.Component {
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <a
-              class="navbar-brand"
+              className="navbar-brand"
               href="https://codingthesmartway.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -45,10 +45,10 @@ class App extends React.Component {
               </ul>
             </div>
           </nav>
-        </div>
         <Route path="/" exact component={TodosList} />
         <Route path="/edit/:id" component={EditTodo} />
         <Route path="/create" component={CreateTodo} />
+        </div>
       </Router>
     );
   }
